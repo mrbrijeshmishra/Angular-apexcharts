@@ -1,0 +1,19 @@
+npm i ng-apexcharts@1.7.0
+
+npm i apexcharts@3.40.0
+
+
+in app.component.ts
+  @ViewChild("chart") chart!: ChartComponent;
+add !after chart
+
+in app.component.html
+<apx-chart
+  #chart
+  [series]="chartOptions.series!"
+  [chart]="chartOptions.chart!"
+  [xaxis]="chartOptions.xaxis!"
+  [title]="chartOptions.title!">
+</apx-chart>
+
+write !
