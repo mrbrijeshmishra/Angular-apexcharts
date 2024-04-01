@@ -1,0 +1,27 @@
+
+<h1>{{title}}</h1>
+<div class="apex-chart">
+  <div class="scroll-text">
+    <marquee>
+      <p>
+        {{latestPublish.publish_on}} | <b>Last Tender Update: </b>{{latestPublish.title}}
+      </p>
+    </marquee>
+  </div>
+  
+  <apx-chart
+    #chart
+    [series]="chartOptions.series!"
+    [chart]="chartOptions.chart!"
+    [xaxis]="chartOptions.xaxis!"
+    [yaxis]="chartOptions.yaxis!"
+    [labels]="chartOptions.labels!"
+    [stroke]="chartOptions.stroke!"
+    [title]="chartOptions.title!"
+    [dataLabels]="chartOptions.dataLabels!"
+  ></apx-chart>
+</div>
+
+
+
+
